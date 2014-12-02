@@ -1,0 +1,33 @@
+#! /usr/bin/env php
+<?php
+require 'vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+const ESB_PATH = '/var/www';
+
+$esb = new Application("ESB command tool", "1.0");
+
+$esb->register('make:sql')
+    ->setDefinition(array(
+        new InputArgument('name', InputArgument::REQUIRED, 'Sql file name'),
+    ))
+    ->setDescription("Make a new sql file")
+    ->setCode(function(InputInterface $input, OutputInterface $output){
+        $name = $input->getArgument('name');
+        $resourcePath = ESB_PATH . '/module/vidaXL/resource';
+
+        $fileName = $resourcePath . '/' . $name . '_' . time() . '.sql';
+        file_put_contents($fileName, '');
+
+        $output->writeln(sprintf('Sql file created: %s', $fileName));
+    });
+
+
+
+$esb->run();
+
+
