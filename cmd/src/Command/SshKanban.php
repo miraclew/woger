@@ -23,10 +23,10 @@ class SshKanban extends Command {
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $cmd = "ssh -i /home/bob/keys/AMItemplateserver.pem ubuntu@54.179.160.196";
-        exec($cmd);
+        $cmd = "bash -c 'ssh -i /home/bob/keys/AMItemplateserver.pem ubuntu@54.179.160.196'";
+//        exec($cmd);
         $process = new Process($cmd);
-        $process->start();
+        $process->run();
     }
 
 

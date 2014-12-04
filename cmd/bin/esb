@@ -1,10 +1,11 @@
 #! /usr/bin/env php
 <?php
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Woger\Command\DeployKanban;
 use Woger\Command\MakeSql;
+use Woger\Command\RsyncCronData;
 use Woger\Command\SshKanban;
 
 const ESB_PATH = '/var/www';
@@ -14,6 +15,7 @@ $commands = array(
     new MakeSql(),
     new DeployKanban(),
     new SshKanban(),
+    new RsyncCronData(),
 );
 
 $esb->addCommands($commands);
