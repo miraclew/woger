@@ -4,6 +4,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Woger\Command\DeployKanban;
+use Woger\Command\Fake;
 use Woger\Command\MakeSql;
 use Woger\Command\RsyncCronData;
 use Woger\Command\SshKanban;
@@ -16,6 +17,7 @@ $commands = array(
     new DeployKanban(),
     new SshKanban(),
     new RsyncCronData(),
+    new Fake(),
 );
 
 $esb->addCommands($commands);

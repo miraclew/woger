@@ -8,4 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Faker\\PHPUnit' => array($vendorDir . '/fzaninotto/faker/test'),
+    'Faker' => array($vendorDir . '/fzaninotto/faker/src'),
 );

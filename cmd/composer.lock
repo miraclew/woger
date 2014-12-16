@@ -4,21 +4,69 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "320e6ccf7ddda8661f07167e053ddb8a",
+    "hash": "635c82b45686a9ba08c0666c8534559d",
     "packages": [
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": []
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-06-04 14:43:02"
+        },
+        {
             "name": "symfony/console",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d3bac228fd7a2aac9193e241b239880b3ba39a10"
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d3bac228fd7a2aac9193e241b239880b3ba39a10",
-                "reference": "d3bac228fd7a2aac9193e241b239880b3ba39a10",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef825fd9f809d275926547c9e57cbf14968793e8",
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8",
                 "shasum": ""
             },
             "require": {
@@ -61,21 +109,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-20 13:24:23"
+            "time": "2014-12-02 20:19:20"
         },
         {
             "name": "symfony/process",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "dc88f75d1c07791e5733f90be747961dce26cf05"
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/dc88f75d1c07791e5733f90be747961dce26cf05",
-                "reference": "dc88f75d1c07791e5733f90be747961dce26cf05",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +156,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-04 14:29:39"
+            "time": "2014-12-02 20:19:20"
         }
     ],
     "packages-dev": [],
